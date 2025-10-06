@@ -32,10 +32,7 @@ def count_words(filename):
     """
     # TODO: Open file and count words
     # Hint: Use split() to separate words
-    with open(filename, 'r') as f:
-        text=f.read()
-        words=text.split()
-        return len(words)
+    pass
 
 
 def count_lines(filename):
@@ -49,9 +46,7 @@ def count_lines(filename):
         int: Total number of lines
     """
     # TODO: Open file and count lines
-    with open(filename, 'r') as f:
-        lines=f.readlines()
-        return len(lines)
+    pass
 
 
 def count_characters(filename, include_spaces=True):
@@ -67,12 +62,7 @@ def count_characters(filename, include_spaces=True):
     """
     # TODO: Open file and count characters
     # If include_spaces is False, don't count spaces
-    with open(filename, 'r') as f:
-        text=f.read()
-        if include_spaces:
-            return len(text)
-        else: 
-            return len(text.replace("",""))
+    pass
 
 
 def find_longest_word(filename):
@@ -87,20 +77,7 @@ def find_longest_word(filename):
     """
     # TODO: Find the longest word
     # Hint: You might need to remove punctuation
-    import string
-    
-    with open(filename, 'r') as f:
-        text=f.read()
-        
-    translator=str.maketrans(",", string.punctuation)
-    clean_text=text.translate(translator)
-    words=clean_text.split()
-    
-    if not words:
-        return""
-    
-    longest_word=max(words, key=len)
-    return longest_word
+    pass
 
 
 def word_frequency(filename):
@@ -118,17 +95,6 @@ def word_frequency(filename):
 
     frequency = {}
 
-    with open(filename, 'r') as f:
-        text=f.read()
-        
-    translator=str.maketrans (",", string.punctuation)
-    clean_text=text.translate(translator).lower()
-    
-    words=clean_text.split()
-    
-    for word in words:
-        frequency[word]=frequency.get(word,0)+1
-        
     # TODO: Open file
     # TODO: Read all words
     # TODO: Convert to lowercase
@@ -188,8 +154,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
-    #add a comment at problem 4 
-    
-    #add comment 
-    

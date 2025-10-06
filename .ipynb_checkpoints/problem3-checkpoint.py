@@ -14,20 +14,11 @@ def get_numbers_from_user():
     numbers = []
 
     while True:
-        # TODO: Get input from use
+        # TODO: Get input from user
         # TODO: Check if user typed 'done'
         # TODO: Try to convert to float and add to list
         # TODO: Handle invalid input gracefully
-        user_input=input("Enter a number (or write 'done' to finish): ")
-        if user_input.lower()=='done':
-            break
-        
-        try:
-            number=float(user_input)
-            numbers.append(number)
-            
-        except ValueError:
-            print("Invalid input. Please enter a valid number.")
+        pass
 
     return numbers
 
@@ -55,19 +46,12 @@ def analyze_numbers(numbers):
     analysis = {}
 
     # TODO: Calculate count
-    analysis['count']=len(numbers)
     # TODO: Calculate sum
-    analysis['sum']=sum(numbers)
     # TODO: Calculate average
-    analysis['average']=sum(numbers)/len(numbers)
     # TODO: Find minimum
-    analysis['minimum']=min(numbers)
     # TODO: Find maximum
-    analysis['maximum']=max(numbers)
     # TODO: Count even numbers (hint: use modulo operator)
-    analysis['even_count']=len([n for n in numbers if n%2 ==0])
     # TODO: Count odd numbers
-    analysis['odd_count']=len([n for n in numbers if n%2 !=0])
 
     return analysis
 
@@ -84,17 +68,8 @@ def display_analysis(analysis):
 
     print("\nAnalysis Results:")
     print("-" * 20)
-    print(".")
-   
+
     # TODO: Display all analysis results in a nice format
-    print("\nNumber Analysis Results:")
-    print(f"Count: {analysis['count']}")
-    print(f"Sum: {analysis['sum']}")
-    print(f"Average: {analysis['average']}")
-    print(f"Minimum: {analysis['minimum']}")
-    print(f"Maximum: {analysis['maximum']}")
-    print(f"Even numbers count: {analysis['even_count']}")
-    print(f"Odd numbers count: {analysis['odd_count']}")
     # Example:
     # Count: 5
     # Sum: 25
@@ -106,7 +81,7 @@ def display_analysis(analysis):
 def main():
     """Main function to run the number analyzer."""
     print("Number Analyzer")
-    print("Enter numbers one at a time. Type 'done' when finished!")
+    print("Enter numbers one at a time. Type 'done' when finished.")
     print()
 
     # Get numbers from user
@@ -125,4 +100,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    

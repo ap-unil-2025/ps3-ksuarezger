@@ -1,0 +1,4 @@
+856431e Fix: Adjusted password validation logic
+da5acfe Added comment to problem2.py
+7bcb689 Add GitHub Classroom autograding configuration
+2dc2daa Initial commit
