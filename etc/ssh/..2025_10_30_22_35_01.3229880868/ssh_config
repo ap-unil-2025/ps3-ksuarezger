@@ -1,0 +1,16 @@
+Host *
+        SendEnv LANG LC_*
+        StrictHostKeyChecking no
+        HashKnownHosts yes
+        GSSAPIAuthentication yes
+        User suarezgek
+        IdentityFile ~/.ssh/id_rsa
+        IdentityFile ~/.ssh/id_dsa
+        IdentityFile ~/.ssh/id_ecdsa
+        IdentityFile ~/.ssh/id_ecdsa_sk
+        IdentityFile ~/.ssh/id_ed25519
+        IdentityFile ~/.ssh/id_ed25519_sk
+        IdentityFile /secrets/id_rsa
+        IdentityFile /secrets/id_dsa
+        IdentityFile /secrets/id_ecdsa
+        IdentityFile /secrets/id_rsa_22314
